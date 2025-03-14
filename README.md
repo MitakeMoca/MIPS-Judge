@@ -38,3 +38,4 @@ def write_file(case, filename):
 python main.py
 ```
 
+生成的数据在 `/data` 目录下，`std` 生成的输出文件名称为 `x.in`，`MIPS` 生成的输出文件格式为 `mipsx.in`，可通过对比输出文件进行进一步的调试。
