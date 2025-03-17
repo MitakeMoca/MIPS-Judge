@@ -13,7 +13,7 @@ MIPS-JUDGE
 └── test.asm
 ```
 
-然后根据需要，修改 `generator` 数据生成器：
+然后根据需要，修改 `generator` 数据生成器（注意，Mars 在输入整数时必须一个整数占一行）：
 
 ```python
 # 测试样例个数
@@ -29,7 +29,7 @@ def generate_input():
 def write_file(case, filename):
     os.makedirs('data', exist_ok=True)
     with open(filename, 'w') as file:
-        file.write(" ".join(map(str, case)) + "\n")
+        file.write("\n".join(map(str, case)) + "\n")
 ```
 
 然后运行 `main.py`，就能看到每个评测点是否正确：

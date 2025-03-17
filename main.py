@@ -68,7 +68,7 @@ def judge_case(file1, file2, i):
         print(len(lines1), lines1)
         print(len(lines2), lines2)
         if len(lines1) != len(lines2):
-            print(f"\033[31mtest case {i}: Wrong Answer 1\033[0m")
+            print(f"\033[31mtest case {i}: Wrong Answer\033[0m")
             return
 
         for line1, line2 in zip(lines1, lines2):
@@ -76,7 +76,7 @@ def judge_case(file1, file2, i):
                 print(f"\033[31mtest case {i}: Wrong Answer\033[0m")
                 return
 
-        print(f"\033[32m test case {i}: Accepted\033[0m")
+        print(f"\033[32mtest case {i}: Accepted\033[0m")
 
     except FileNotFoundError as e:
         print(f"文件未找到: {e}")
